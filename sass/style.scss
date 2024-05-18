@@ -1,15 +1,15 @@
-@import "fonts";
+@import "global/fonts";
 
 // You can modify the theme directly, or override some of the variables
 // Overrides just need placed prior to the theme import
 // For example:
 // $color-primary: #3a0;
-@import "theme";
-@import "reset";
-@import "logomark";
-@import "layout";
-@import "header";
-@import "nav";
-@import "styles";
-@import "footer";
+@import "global/theme";
+@import "global/reset";
+@import "block/logomark";
+@import "block/header";
+@import "block/nav";
+@import "composition/styles";
+@import "composition/layout";
+@import "block/footer";
 
