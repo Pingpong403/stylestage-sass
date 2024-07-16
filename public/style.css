@@ -90,20 +90,20 @@ header h2 {
 }
 
 header p {
-  margin-top: 5em;
+  margin-top: 2em;
   font-size: 0.8rem;
 }
 
 header h1 {
-  font-size: 0; /* Hide the text without using color */
+  font-size: 0;
   margin: 0;
   position: relative;
-  width: 330px; /* Set width of the h1 element */
-  height: 330px; /* Set height of the h1 element */
-  display: inline-block; /* Ensure h1 is treated as a block for dimensions */
-  overflow: hidden; /* Ensure content does not overflow */
+  width: 330px;
+  height: 330px;
+  display: inline-block;
+  overflow: hidden;
   background: url("../sass/block/imgs/logo.png") no-repeat center center;
-  background-size: contain; /* Ensure the image fits within the element */
+  background-size: contain;
 }
 
 nav {
@@ -128,6 +128,28 @@ nav ul a {
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+nav ul a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.3s ease;
+  transition-delay: 0.1s;
+}
+nav ul a:hover {
+  color: rgb(227, 6, 19);
+}
+nav ul a:hover::after {
+  width: 100%;
+  left: 0;
+  background: rgb(227, 6, 19);
 }
 
 body {
