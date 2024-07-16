@@ -1,1 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
+
+
+@font-face {
+    font-family: 'BloodCrowRegular';
+    src: url('../sass/fonts/bloodcrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  header .container h1, header .container h2 {
+    font-family: 'BloodCrowRegular', sans-serif;
+    color: black;
+  }

@@ -21,3 +21,49 @@
 //     max-width: 30ch;
 //   }
 // }
+
+header .container {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 75%;
+  }
+
+  .link-github{
+    font-size: 1.2rem;
+  }
+  
+  .link-github svg {
+    width: 16px;
+    height: 16px; 
+    // fill: currentColor; 
+  }
+
+  header h2 {
+    font-size: 2rem;
+  }
+
+  header p {
+    margin-top: 5em;
+    font-size: 0.8rem;
+  }
+  
+  header h1 {
+    // font-size: 5.5em;
+    // margin-top: 0.5em;
+    // color: transparent;
+    font-size: 0;
+    margin: 0;
+    position: relative;
+    width: 330px; 
+    height: 330px; 
+    display: inline-block;
+    overflow: hidden; 
+    background: url('../sass/block/imgs/logo.png') no-repeat center center;
+    background-size: contain;
+  }
+
+
+
+
