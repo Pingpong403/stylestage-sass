@@ -73,7 +73,7 @@ header .container {
   margin: auto;
   text-align: center;
   justify-content: center;
-  width: 75%;
+  width: 95%;
 }
 
 .link-github {
@@ -108,7 +108,7 @@ header h1 {
 
 nav {
   background-color: black;
-  width: 75%;
+  width: 95%;
   margin: auto;
   justify-content: center;
 }
@@ -160,37 +160,74 @@ body {
 }
 
 .page-footer {
-  --logomark-height: 2em;
-  --logomark-padding: 0;
   position: relative;
   padding: 3rem 1rem;
-  background-color: var(--color-primary);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2fbf7' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-position: center -34px;
-  color: var(--color-light);
 }
-.page-footer::before {
-  display: inline-grid;
-  min-height: var(--logomark-height);
-  padding: var(--logomark-padding);
-  border: 0.16em solid var(--color-primary);
-  box-shadow: 0.12em 0.12em var(--color-secondary);
-  place-content: center;
+.page-footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  padding: 1rem 2rem;
+}
+.page-footer div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.page-footer div ul li {
+  text-align: center;
+  background: url("../sass/block/imgs/sword.png") no-repeat;
+  overflow: visible;
+  background-size: 15px;
+  background-position-x: 0px;
+  background-position-y: center;
+  padding: 2px 25px;
+}
+.page-footer div ul li a {
+  text-decoration: none;
+  color: var(--color-primary-alt);
+  position: relative;
+  transition: color 0.3s ease;
+}
+.page-footer div ul li a::after {
+  content: "";
   position: absolute;
-  left: 50%;
-  width: 2em;
-  transform: translate(-50%, -100%);
-  background-color: var(--color-background);
-  color: var(--color-primary);
-  font-size: 3rem;
-  content: "S";
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.3s ease;
+  transition-delay: 0.1s;
+}
+.page-footer div ul li a:hover {
+  color: rgb(227, 6, 19);
+}
+.page-footer div ul li a:hover::after {
+  width: 100%;
+  left: 0;
+  background: rgb(227, 6, 19);
+}
+.page-footer p {
+  text-align: center;
+  width: 75%;
 }
 .page-footer p:first-child {
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-weight: var(--font-weight-strong);
   letter-spacing: 0.03em;
   text-align: center;
+  font-family: "BloodCrowRegular", sans-serif;
+  color: black;
+  font-size: 32px;
 }
 .page-footer p a {
   color: inherit;

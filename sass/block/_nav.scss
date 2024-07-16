@@ -1,6 +1,6 @@
 nav {
   background-color: black;
-  width: 75%;
+  width: 95%;
   margin: auto;
   justify-content: center;
   ul {
@@ -12,36 +12,37 @@ nav {
     list-style: none;
 
     li {
-      margin: 0 15px;     }
+      margin: 0 15px;
+    }
 
-      a {
-        display: inline-grid;
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
-        position: relative;
-        transition: color 0.3s ease; 
-      }
-      a::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        display: block;
-        margin-top: 5px;
-        // bottom: 0;
-        right: 0;
-        background: white;
-        transition: width 0.3s ease; 
-        transition-delay: 0.1s;
-      }
-      a:hover {
-        color: rgb(227,6,19); 
-      }
-      a:hover::after {
-        width: 100%;
-        left: 0;
-        background: rgb(227,6,19);
-      }
+    a {
+      display: inline-grid;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      margin-top: 5px;
+      // bottom: 0;
+      right: 0;
+      background: white;
+      transition: width 0.3s ease;
+      transition-delay: 0.1s;
+    }
+    a:hover {
+      color: rgb(227, 6, 19);
+    }
+    a:hover::after {
+      width: 100%;
+      left: 0;
+      background: rgb(227, 6, 19);
+    }
   }
 }
