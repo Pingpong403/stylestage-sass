@@ -5,64 +5,162 @@ main {
   padding: 2rem;
   position: relative;
 
-  article:nth-child(1) {
+  article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    section {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-top: 5vh;
-      padding-bottom: 5vh;
-      width: 75%;
-      h2 {
-        font-family: "BloodCrowRegular", sans-serif;
-        color: black;
-        margin-top: 0;
-      }
-      &:nth-child(1) {
-        background: url("../sass/block/imgs/tanjiro.png") no-repeat;
-        background-position-y: 100%;
-        background-position-x: right;
-        background-size: 250px;
-        overflow: visible;
+    h2 {
+      font-family: "BloodCrowRegular", sans-serif;
+      color: black;
+      margin-top: 0;
+    }
 
-        p:nth-child(5) {
-          margin-bottom: 250px;
-        }
-      }
+    &:nth-child(1) {
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        width: 75%;
 
-      &:nth-child(2) {
-        background: url("../sass/block/imgs/zenitsu.png") no-repeat;
-        background-position-y: 100%;
-        background-position-x: right;
-        background-size: 250px;
+        &:nth-child(1) {
+          background: url("../sass/block/imgs/tanjiro.png") no-repeat;
+          background-position-y: 100%;
+          background-position-x: right;
+          background-size: 250px;
+          overflow: visible;
 
-        p:nth-child(6) {
-          margin-bottom: 250px;
+          p:nth-child(5) {
+            margin-bottom: 250px;
+          }
         }
 
-        ul {
-          list-style: none;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 5px;
-          width: 100%;
-          padding: 0;
+        &:nth-child(2) {
+          background: url("../sass/block/imgs/zenitsu.png") no-repeat;
+          background-position-y: 100%;
+          background-position-x: right;
+          background-size: 250px;
 
-          li {
-            background-color: #58c29e;
-            padding: 5px 10px;
-            cursor: pointer;
+          p:nth-child(6) {
+            margin-bottom: 250px;
+          }
+
+          ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            width: 100%;
+            padding: 0;
+
+            li {
+              background-color: #58c29e;
+              padding: 5px 10px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      blockquote {
+        padding: 1rem 1rem;
+        border-left: solid 5px rgb(227, 6, 19);
+      }
+    }
+
+    &#guidelines {
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        width: 75%;
+        background: url("../sass/block/imgs/inosuke.jpg") no-repeat;
+        background-position-y: 100%;
+        background-position-x: right;
+        background-size: 300px;
+
+        a.link-guidelines {
+          text-decoration: none;
+          color: var(--color-background);
+          background-color: #58c29e;
+          padding: 10px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+          transition: transform 0.3s ease;
+          transition-delay: 0.1s;
+          margin-bottom: 250px;
+
+          &:hover {
+            transform: scale(0.98);
           }
         }
       }
     }
-    blockquote {
-      padding: 1rem 1rem;
-      border-left: solid 5px rgb(227, 6, 19);
+
+    &#contribute {
+      background: url("../sass/block/imgs/nezuko.png") no-repeat;
+      background-position-y: 100%;
+      background-position-x: 80%;
+      background-size: 300px;
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 75%;
+
+        p:nth-child(2) {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        // second container
+        &:nth-child(2) {
+          h3 {
+            font-family: "BloodCrowRegular", sans-serif;
+            color: rgb(227, 6, 19);
+            margin-top: 2vh;
+          }
+
+          ol {
+            padding: 0;
+            li {
+              margin: 25px;
+              padding-left: 15px;
+              list-style: none;
+              border-left: solid 3px rgb(227, 6, 19);
+            }
+          }
+        }
+      }
+    }
+
+    // footer
+
+    footer {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 250px;
+
+      h3 {
+        margin-bottom: 2vh;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--color-background);
+        background-color: #58c29e;
+        padding: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+        transition-delay: 0.1s;
+        margin-bottom: 250px;
+
+        &:hover {
+          transform: scale(0.98);
+        }
+      }
     }
   }
 }
