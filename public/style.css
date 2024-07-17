@@ -73,7 +73,7 @@ header .container {
   margin: auto;
   text-align: center;
   justify-content: center;
-  width: 95%;
+  width: 75%;
 }
 
 .link-github {
@@ -108,7 +108,7 @@ header h1 {
 
 nav {
   background-color: black;
-  width: 95%;
+  width: 75%;
   margin: auto;
   justify-content: center;
 }
@@ -152,6 +152,69 @@ nav ul a:hover::after {
   background: rgb(227, 6, 19);
 }
 
+main {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+main article:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article:nth-child(1) section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 75%;
+}
+main article:nth-child(1) section h2 {
+  font-family: "BloodCrowRegular", sans-serif;
+  color: black;
+  margin-top: 0;
+}
+main article:nth-child(1) section:nth-child(1) {
+  background: url("../sass/block/imgs/tanjiro.png") no-repeat;
+  background-position-y: 100%;
+  background-position-x: right;
+  background-size: 250px;
+  overflow: visible;
+}
+main article:nth-child(1) section:nth-child(1) p:nth-child(5) {
+  margin-bottom: 250px;
+}
+main article:nth-child(1) section:nth-child(2) {
+  background: url("../sass/block/imgs/zenitsu.png") no-repeat;
+  background-position-y: 100%;
+  background-position-x: right;
+  background-size: 250px;
+}
+main article:nth-child(1) section:nth-child(2) p:nth-child(6) {
+  margin-bottom: 250px;
+}
+main article:nth-child(1) section:nth-child(2) ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 0;
+}
+main article:nth-child(1) section:nth-child(2) ul li {
+  background-color: #58c29e;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+main article:nth-child(1) blockquote {
+  padding: 1rem 1rem;
+  border-left: solid 5px rgb(227, 6, 19);
+}
+
 body {
   background-image: conic-gradient(#58c29e 90deg, #22201f 0 180deg, #58c29e 0 270deg, #22201f 0);
   background-size: 250px 250px;
@@ -168,7 +231,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
   position: relative;
   background-color: white;
   padding: 1rem 2rem;

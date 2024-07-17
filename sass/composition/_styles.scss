@@ -1,0 +1,68 @@
+main {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+
+  article:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+      width: 75%;
+      h2 {
+        font-family: "BloodCrowRegular", sans-serif;
+        color: black;
+        margin-top: 0;
+      }
+      &:nth-child(1) {
+        background: url("../sass/block/imgs/tanjiro.png") no-repeat;
+        background-position-y: 100%;
+        background-position-x: right;
+        background-size: 250px;
+        overflow: visible;
+
+        p:nth-child(5) {
+          margin-bottom: 250px;
+        }
+      }
+
+      &:nth-child(2) {
+        background: url("../sass/block/imgs/zenitsu.png") no-repeat;
+        background-position-y: 100%;
+        background-position-x: right;
+        background-size: 250px;
+
+        p:nth-child(6) {
+          margin-bottom: 250px;
+        }
+
+        ul {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 5px;
+          width: 100%;
+          padding: 0;
+
+          li {
+            background-color: #58c29e;
+            padding: 5px 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    blockquote {
+      padding: 1rem 1rem;
+      border-left: solid 5px rgb(227, 6, 19);
+    }
+  }
+}
