@@ -144,12 +144,12 @@ nav ul a::after {
   transition-delay: 0.1s;
 }
 nav ul a:hover {
-  color: rgb(227, 6, 19);
+  color: #e30613;
 }
 nav ul a:hover::after {
   width: 100%;
   left: 0;
-  background: rgb(227, 6, 19);
+  background: #e30613;
 }
 
 main {
@@ -212,7 +212,7 @@ main article:nth-child(1) section:nth-child(2) ul li {
 }
 main article:nth-child(1) blockquote {
   padding: 1rem 1rem;
-  border-left: solid 5px rgb(227, 6, 19);
+  border-left: solid 5px #e30613;
 }
 main article#guidelines section {
   display: flex;
@@ -257,7 +257,7 @@ main article#contribute section p:nth-child(2) {
 }
 main article#contribute section:nth-child(2) h3 {
   font-family: "BloodCrowRegular", sans-serif;
-  color: rgb(227, 6, 19);
+  color: #e30613;
   margin-top: 2vh;
 }
 main article#contribute section:nth-child(2) ol {
@@ -267,7 +267,7 @@ main article#contribute section:nth-child(2) ol li {
   margin: 25px;
   padding-left: 15px;
   list-style: none;
-  border-left: solid 3px rgb(227, 6, 19);
+  border-left: solid 3px #e30613;
 }
 main article footer {
   display: flex;
@@ -289,6 +289,30 @@ main article footer a {
 }
 main article footer a:hover {
   transform: scale(0.98);
+}
+
+aside {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside h2 {
+  font-family: "BloodCrowRegular", sans-serif;
+  color: black;
+  margin-top: 0;
+}
+aside h4 {
+  font-family: "BloodCrowRegular", sans-serif;
+  color: black;
+  margin-top: 0;
+}
+aside div {
+  width: 75%;
 }
 
 body {
@@ -349,12 +373,12 @@ body {
   transition-delay: 0.1s;
 }
 .page-footer div ul li a:hover {
-  color: rgb(227, 6, 19);
+  color: #e30613;
 }
 .page-footer div ul li a:hover::after {
   width: 100%;
   left: 0;
-  background: rgb(227, 6, 19);
+  background: #e30613;
 }
 .page-footer p {
   text-align: center;
@@ -378,5 +402,3 @@ body {
 .page-footer .container > :last-child {
   margin-bottom: 0;
 }
-
-/*# sourceMappingURL=style.css.map */
