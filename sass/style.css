@@ -74,6 +74,7 @@ header .container {
   text-align: center;
   justify-content: center;
   width: 75%;
+  border-radius: 30px 30px 0 0;
 }
 
 .link-github {
@@ -152,6 +153,189 @@ nav ul a:hover::after {
   background: rgb(227, 6, 19);
 }
 
+* a {
+  color: #58c29e;
+  font-weight: 900;
+}
+
+* a:hover {
+  color: rgb(227, 6, 19);
+  font-weight: 900;
+}
+
+main {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article h2 {
+  font-family: "BloodCrowRegular", sans-serif;
+  color: black;
+  margin-top: 0;
+}
+main article:nth-child(1) section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 75%;
+}
+main article:nth-child(1) section:nth-child(1) {
+  background: url("../sass/block/imgs/tanjiro.png") no-repeat;
+  background-position-y: 100%;
+  background-position-x: right;
+  background-size: 250px;
+  overflow: visible;
+}
+main article:nth-child(1) section:nth-child(1) p:nth-child(5) {
+  margin-bottom: 250px;
+}
+main article:nth-child(1) section:nth-child(2) {
+  background: url("../sass/block/imgs/zenitsu.png") no-repeat;
+  background-position-y: 100%;
+  background-position-x: right;
+  background-size: 250px;
+}
+main article:nth-child(1) section:nth-child(2) p:nth-child(6) {
+  margin-bottom: 250px;
+}
+main article:nth-child(1) section:nth-child(2) ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 0;
+}
+main article:nth-child(1) section:nth-child(2) ul li {
+  background-color: #58c29e;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+main article:nth-child(1) blockquote {
+  padding: 1rem 1rem;
+  border-left: solid 5px rgb(227, 6, 19);
+}
+main article#guidelines section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 75%;
+  background: url("../sass/block/imgs/inosuke.jpg") no-repeat;
+  background-position-y: 100%;
+  background-position-x: right;
+  background-size: 300px;
+}
+main article#guidelines section a.link-guidelines {
+  text-decoration: none;
+  color: var(--color-background);
+  background-color: #58c29e;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+  margin-bottom: 250px;
+}
+main article#guidelines section a.link-guidelines:hover {
+  transform: scale(0.98);
+}
+main article#contribute {
+  background: url("../sass/block/imgs/nezuko.png") no-repeat;
+  background-position-y: 100%;
+  background-position-x: 80%;
+  background-size: 300px;
+}
+main article#contribute section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75%;
+}
+main article#contribute section p:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+}
+main article#contribute section:nth-child(2) h3 {
+  font-family: "BloodCrowRegular", sans-serif;
+  color: rgb(227, 6, 19);
+  margin-top: 2vh;
+}
+main article#contribute section:nth-child(2) ol {
+  padding: 0;
+}
+main article#contribute section:nth-child(2) ol li {
+  margin: 25px;
+  padding-left: 15px;
+  list-style: none;
+  border-left: solid 3px rgb(227, 6, 19);
+}
+main article footer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 250px;
+}
+main article footer h3 {
+  margin-bottom: 2vh;
+}
+main article footer a {
+  text-decoration: none;
+  color: var(--color-background);
+  background-color: #58c29e;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+  margin-bottom: 250px;
+}
+main article footer a:hover {
+  transform: scale(0.98);
+}
+
+aside {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside h2 {
+  font-family: "BloodCrowRegular", sans-serif;
+  color: black;
+  margin-top: 0;
+}
+aside h4 {
+  font-family: "BloodCrowRegular", sans-serif;
+  color: black;
+  margin-top: 0;
+}
+aside div {
+  width: 75%;
+}
+aside li {
+  text-align: left;
+  background: url("../sass/block/imgs/sword.png") no-repeat;
+  overflow: visible;
+  background-size: 15px;
+  background-position-x: 0px;
+  background-position-y: center;
+  padding: 2px 25px;
+  list-style: none;
+}
+
 body {
   background-image: conic-gradient(#58c29e 90deg, #22201f 0 180deg, #58c29e 0 270deg, #22201f 0);
   background-size: 250px 250px;
@@ -160,37 +344,76 @@ body {
 }
 
 .page-footer {
-  --logomark-height: 2em;
-  --logomark-padding: 0;
   position: relative;
-  padding: 3rem 1rem;
-  background-color: var(--color-primary);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2fbf7' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-position: center -34px;
-  color: var(--color-light);
+  padding: 0 0 3rem 0;
 }
-.page-footer::before {
-  display: inline-grid;
-  min-height: var(--logomark-height);
-  padding: var(--logomark-padding);
-  border: 0.16em solid var(--color-primary);
-  box-shadow: 0.12em 0.12em var(--color-secondary);
-  place-content: center;
+.page-footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  padding: 1rem 2rem;
+}
+.page-footer div ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.page-footer div ul li {
+  text-align: center;
+  background: url("../sass/block/imgs/sword.png") no-repeat;
+  overflow: visible;
+  background-size: 15px;
+  background-position-x: 0px;
+  background-position-y: center;
+  padding: 2px 25px;
+}
+.page-footer div ul li a {
+  text-decoration: none;
+  color: var(--color-primary-alt);
+  position: relative;
+  transition: color 0.3s ease;
+}
+.page-footer div ul li a::after {
+  content: "";
   position: absolute;
-  left: 50%;
-  width: 2em;
-  transform: translate(-50%, -100%);
-  background-color: var(--color-background);
-  color: var(--color-primary);
-  font-size: 3rem;
-  content: "S";
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.3s ease;
+  transition-delay: 0.1s;
+}
+.page-footer div ul li a:hover {
+  color: rgb(227, 6, 19);
+}
+.page-footer div ul li a:hover::after {
+  width: 100%;
+  left: 0;
+  background: rgb(227, 6, 19);
+}
+.page-footer p {
+  text-align: center;
+  width: 75%;
 }
 .page-footer p:first-child {
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-weight: var(--font-weight-strong);
   letter-spacing: 0.03em;
   text-align: center;
+  font-family: "BloodCrowRegular", sans-serif;
+  color: black;
+  font-size: 32px;
 }
 .page-footer p a {
   color: inherit;
@@ -200,6 +423,9 @@ body {
 }
 .page-footer .container > :last-child {
   margin-bottom: 0;
+}
+.page-footer .container {
+  border-radius: 0 0 30px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

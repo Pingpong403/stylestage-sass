@@ -74,6 +74,7 @@ header .container {
   text-align: center;
   justify-content: center;
   width: 75%;
+  border-radius: 30px 30px 0 0;
 }
 
 .link-github {
@@ -144,12 +145,22 @@ nav ul a::after {
   transition-delay: 0.1s;
 }
 nav ul a:hover {
-  color: #e30613;
+  color: rgb(227, 6, 19);
 }
 nav ul a:hover::after {
   width: 100%;
   left: 0;
-  background: #e30613;
+  background: rgb(227, 6, 19);
+}
+
+* a {
+  color: #58c29e;
+  font-weight: 900;
+}
+
+* a:hover {
+  color: rgb(227, 6, 19);
+  font-weight: 900;
 }
 
 main {
@@ -212,7 +223,7 @@ main article:nth-child(1) section:nth-child(2) ul li {
 }
 main article:nth-child(1) blockquote {
   padding: 1rem 1rem;
-  border-left: solid 5px #e30613;
+  border-left: solid 5px rgb(227, 6, 19);
 }
 main article#guidelines section {
   display: flex;
@@ -257,7 +268,7 @@ main article#contribute section p:nth-child(2) {
 }
 main article#contribute section:nth-child(2) h3 {
   font-family: "BloodCrowRegular", sans-serif;
-  color: #e30613;
+  color: rgb(227, 6, 19);
   margin-top: 2vh;
 }
 main article#contribute section:nth-child(2) ol {
@@ -267,7 +278,7 @@ main article#contribute section:nth-child(2) ol li {
   margin: 25px;
   padding-left: 15px;
   list-style: none;
-  border-left: solid 3px #e30613;
+  border-left: solid 3px rgb(227, 6, 19);
 }
 main article footer {
   display: flex;
@@ -314,6 +325,16 @@ aside h4 {
 aside div {
   width: 75%;
 }
+aside li {
+  text-align: left;
+  background: url("../sass/block/imgs/sword.png") no-repeat;
+  overflow: visible;
+  background-size: 15px;
+  background-position-x: 0px;
+  background-position-y: center;
+  padding: 2px 25px;
+  list-style: none;
+}
 
 body {
   background-image: conic-gradient(#58c29e 90deg, #22201f 0 180deg, #58c29e 0 270deg, #22201f 0);
@@ -324,7 +345,7 @@ body {
 
 .page-footer {
   position: relative;
-  padding: 3rem 1rem;
+  padding: 0 0 3rem 0;
 }
 .page-footer div {
   display: flex;
@@ -339,6 +360,7 @@ body {
 }
 .page-footer div ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -373,12 +395,12 @@ body {
   transition-delay: 0.1s;
 }
 .page-footer div ul li a:hover {
-  color: #e30613;
+  color: rgb(227, 6, 19);
 }
 .page-footer div ul li a:hover::after {
   width: 100%;
   left: 0;
-  background: #e30613;
+  background: rgb(227, 6, 19);
 }
 .page-footer p {
   text-align: center;
@@ -402,3 +424,8 @@ body {
 .page-footer .container > :last-child {
   margin-bottom: 0;
 }
+.page-footer .container {
+  border-radius: 0 0 30px 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

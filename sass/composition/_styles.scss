@@ -1,3 +1,13 @@
+* a {
+   color: #58c29e;
+   font-weight: 900;
+}
+
+* a:hover {
+   color: rgb(227,6,19);
+   font-weight: 900;
+}
+
 main {
   background-color: white;
   width: 75%;
@@ -185,5 +195,15 @@ aside {
   }
   div {
     width: 75%;
+  }
+  li{
+    text-align: left;
+    background: url("../sass/block/imgs/sword.png") no-repeat;
+    overflow: visible;
+    background-size: 15px;
+    background-position-x: 0px;
+    background-position-y: center;
+    padding: 2px 25px;
+    list-style: none;
   }
 }
