@@ -70,6 +70,10 @@ main {
               padding: 5px 10px;
               cursor: pointer;
             }
+            li:hover {
+              background-color: rgb(143,81,66);
+              color: #58c29e;
+            }
           }
         }
       }

@@ -6,4 +6,80 @@ body {
   font-family: var(--font-family);
 }
 
+// animation loading page
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background-image: conic-gradient(#58c29e 90deg, #22201f 0 180deg, #58c29e 0 270deg, #22201f 0);
+  background-size: 250px 250px;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  perspective: 1000px; 
+}
 
+@keyframes openBox {
+  0% {
+    transform: rotateX(0deg); 
+  }
+  100% {
+    transform: rotateX(-90deg); 
+    opacity: 0; 
+    z-index: -1;
+  }
+}
+// box going up
+// @keyframes openBox {
+//   0% {
+//     transform: scaleY(1); 
+//   }
+//   100% {
+//     transform: scaleY(0); 
+//   }
+// }
+
+@keyframes revealContent {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(143,81,66);
+  z-index: 9999; 
+  animation: openBox 2s ease-in-out forwards 3s; 
+  transform-origin: top;
+  transform: scaleY(1); 
+  background-image: url("../sass/block/imgs/nezuko-box.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hidden-content,
+header,
+nav,
+main,
+aside,
+footer {
+  opacity: 0;
+  animation: revealContent 2s ease-in-out forwards 5s;
+}
+
+/* content that will be revealed after the box animation is over */
+header,
+nav,
+main,
+aside,
+footer {
+  animation-delay: 5s;
+}
